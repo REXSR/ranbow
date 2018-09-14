@@ -3,23 +3,14 @@
 
     "servers": [
 
-       "server1 id" , "server2 id" //يمديك ضيق سرفرات..
-
-     
-
-      
-
-      
-
-    
-
+       "server1 id" , "server2 id
     ],
 
       "roleName": "Revive♡", 
 
-    "colors": 12,//لا تغيره
+    "colors": 12,
 
-    "speed": 60.000,//لا تغيره
+    "speed": 60.000,
 
     "logging": true
 
