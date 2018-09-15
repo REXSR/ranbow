@@ -48,7 +48,12 @@ client.user.setGame(`تجربة الاكواد.`,"http://twitch.tv/S-F")
   }
 });
 
-
+client.on("ready", () => {
+    setInterval(function(){
+        client.guilds.get("488391992204722182").roles.find("name", "play").edit({
+            color : "RANDOM"
+        });
+    },1000)
 
 
 
