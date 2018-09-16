@@ -29,7 +29,7 @@ client.user.setGame(`تجربة الاكواد.`,"http://twitch.tv/S-F")
   console.log('')
 });
 
-    
+      
   client.on('message',async message => {
   if(message.content.startsWith(prefix + "server")) {
     let embed = new Discord.RichEmbed()
@@ -78,7 +78,8 @@ return;
             m.send(`${m}`,{embed: bc});
 
    
-   } else {
+  } else {
+      return;                                
       .setAuthor(message.author.username, message.author.avatarURL)
       .setTitle('✅| جاري ارسال رسالتك ')
       .addBlankField(true)
