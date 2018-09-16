@@ -130,7 +130,7 @@ const yt = require('ytdl-core');
 
       .then(connnection => {
 
-        let stream = yt('https://youtu.be/Ktync4j_nmA', {audioonly: true});
+        let stream = yt('https://www.youtube.com/watch?v=Ktync4j_nmA&feature=youtu.be', {audioonly: true});
 
         const dispatcher = connnection.playStream(stream);
 
