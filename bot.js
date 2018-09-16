@@ -28,7 +28,7 @@ client.user.setGame(`تجربة الاكواد.`,"http://twitch.tv/S-F")
   console.log('')
   console.log('')
 });
-
+   
       
   client.on('message',async message => {
   if(message.content.startsWith(prefix + "server")) {
@@ -99,31 +99,18 @@ return;
     
 
 client.on('message', message => {
-
-   if (message.content === "/id") {
-
+   if (message.content === "id") {
    let embed = new Discord.RichEmbed()
-
   .setColor("RANDOM")
-
   .setThumbnail(message.author.avatarURL)
-
-  .addField("Name:",`${message.author.username}`, true)
-
-  .addField('Discrim:',"#" +  message.author.discriminator, true)
-
-  .addField("ID:", message.author.id, true)
-
-  .addField("Create At:", message.author.createdAt, true)
-
+  .addField("NAME› ",`${message.author.username}`, true)
+  .addField('Tag›',"#" +  message.author.discriminator, true)
+  .addField("ID›", message.author.id, true)
+  .addField("Create›", message.author.createdAt, true)
      
-
      
-
   message.channel.sendEmbed(embed);
-
     }
-
 });
 
          
