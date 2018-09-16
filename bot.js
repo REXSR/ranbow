@@ -76,8 +76,7 @@ return;
             .setColor('#ff0000')
             // m.send(`[${m}]`);
             m.send(`${m}`,{embed: bc});
-        });
-         const AziRo = new Discord.RichEmbed()
+  }
       .setAuthor(message.author.username, message.author.avatarURL)
       .setTitle('✅| جاري ارسال رسالتك ')
       .addBlankField(true)
