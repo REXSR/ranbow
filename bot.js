@@ -108,6 +108,70 @@ client.on('message', message => {
 
 
 
+  
+
+client.on('message', message => {
+
+const yt = require('ytdl-core');
+
+  if (message.content.startsWith('/q1')) {
+
+              if(!message.channel.guild) return message.reply('** This command only for servers **');
+
+    const voiceChannel = message.member.voiceChannel;
+
+    if (!voiceChannel) {
+
+      return message.reply(`من فضلك ادخل روم صوتي `);
+
+    }
+
+    voiceChannel.join()
+
+      .then(connnection => {
+
+        let stream = yt('https://youtu.be/Ktync4j_nmA', {audioonly: true});
+
+        const dispatcher = connnection.playStream(stream);
+
+        dispatcher.on('end', () => {
+
+          voiceChannel.leave();
+
+        });
+
+      });
+
+  }
+
+  
+
+  if (message.content.startsWith('/stop')) {
+
+              if(!message.channel.guild) return message.reply('** This command only for servers **');
+
+    const voiceChannel = message.member.voiceChannel;
+
+    if (!voiceChannel) {
+
+      return message.reply(`من فضلك ادخل روم صوتي `);
+
+    }
+
+voiceChannel.leave();
+
+  }
+
+});
+
+ 
+
+
+
+
+
+ 
+
      
       
 
