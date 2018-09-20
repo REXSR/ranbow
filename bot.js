@@ -6,7 +6,7 @@ client.on('ready', () => {
 
     console.log(`[NAWAF] ${client.users.size}`)
 
-    client.user.setStatus("ldle")
+    client.user.setStatus("online")
 
 });
 
@@ -42,42 +42,65 @@ client.on('message', message => {
 
 
 
+client.on("guildMemberAdd", (member) => {
+
+    let channel = member.guild.channels.get("488406701582843920");
+
+    if (!channel) {
+
+        console.log("!the channel id it's not correct");
+
+        return;
+
+    }
+
+    if (member.id == client.user.id) {
+
+        return;
+
+    }
+
+    console.log('-');
+
+    var guild;
+
+    while (!guild)
+
+        guild = client.guilds.get("488391992204722182");
+
+    guild.fetchInvites().then((data) => {
+
+        data.forEach((Invite, key, map) => {
+
+            var Inv = Invite.code;
+
+            if (dat[Inv])
+
+                if (dat[Inv] < Invite.uses) {
+
+                    setTimeout(function() {
+
+ channel.send(`**invited by** ${Invite.inviter} `) ;
+
+                    },1500);
+
+ }
+
+            dat[Inv] = Invite.uses;
+
+       
+
+       });
+
+    });
+
+});
 
     
 
 
   
-client.on('guildMemberAdd', member => {
 
-    let channel = member.guild.channels.find('name', 'play');
-
-    let memberavatar = member.user.avatarURL
-
-      if (!channel) return;
-
-    let embed = new Discord.RichEmbed()
-
-        .setColor('RANDOM')
-
-        .addField(' ' , `Welcome To Revive ., ${member}`)
-
-
-
-               
-
-
-                     
-
-
-                                       
-
-
-
-   
-
-      channel.sendEmbed(embed);
-
-    });
 
 
 
@@ -139,7 +162,7 @@ client.on('guildMemberAdd', member => {
 
 
 
-
+ 
 
 
 
