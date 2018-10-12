@@ -57,8 +57,6 @@ Discord.RichEmbed()
 .addField('السيرفر ', message.guild.name)
 .addField('المرسل ', message.author.username)
 .addField('الرسالة', args)
-.setThumbnail(message.author.avatarURL)
-.setFooter(copy, client.user.avatarURL);
 m.send({ embed: bc })
 msg.delete();
 })
