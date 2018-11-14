@@ -1,9 +1,9 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-const prefix = ".";
+const prefix = "#";
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
-client.user.setGame(`#Royal Shop .`,"http://twitch.tv/S-F")
+client.user.setGame(`#Nawaf the best.`,"http://twitch.tv/S-F")
   console.log('')
   console.log('')
   console.log('╔[═════════════════════════════════════════════════════════════════]╗')
@@ -34,9 +34,9 @@ client.on('message', message => {
  
               if(!message.channel.guild) return;
  
-    var prefix = ".";
+    var prefix = "";
  
-    if(message.content.startsWith('.bc')) {
+    if(message.content.startsWith('bc')) {
  
     if(!message.channel.guild) return message.channel.send('**هذا الأمر فقط للسيرفرات**').then(m => m.delete(5000));
  
@@ -159,7 +159,7 @@ client.on('message', message => {
 
 
 client.on('message', async function (message)  {
-if(message.content.startsWith(prefix+"server")) {
+if(message.content.startsWith(prefix+"#server")) {
 const vlevel = ['None', 'Low (Must have verified email)', 'Medium (Must be register for 5 mineuts)', 'High (Need to wait 10 minutes)', 'Very High (Need verified phone on account)']
 const members = await message.guild.members.filter(m=> m.presence.status === 'online').size + message.guild.members.filter(m=> m.presence.status === 'idle').size + message.guild.members.filter(m=> m.presence.status === 'dnd').size  
 message.channel.send(new discord.RichEmbed() 
