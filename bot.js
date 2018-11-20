@@ -12,7 +12,7 @@ if(!mohamed) return;
 
 if(mohamed) {
 
-setTimeout(() => mohamed.send(`**Welcome to Power Server..**`), 4000)        
+setTimeout(() => mohamed.send(`**Ꮃelcome Ꭲo Ꮪerver Power**`), 3000)        
 
 }
 
@@ -23,61 +23,6 @@ client.on('ready',async () => {
   client.channels.find(ch => ch.id === "495002982593855489" && ch.type === 'voice').join();
 
 });
-
-
-client.on("guildMemberRemove", member => {
-  member.createDM().then(function (channel) {
-  return channel.send(`**السلام عليكم
--أحادثينا حقيقية وتواجدنا دائم حتى وأن ضاقت بك الأوقات
-‏دائم التواجد لذلك أقترب ولا تزيد أضعاف المسافة**. ♥
-https://discord.gg/yReJq2T
-[ ${member}  ]
-@everyone
-@here
-`)
-}).catch(console.error)
-})
- 
-client.on("guildMemberAdd", member => {
-  member.createDM().then(function (channel) {
-  return channel.send(`**السلام عليكم
--أحادثينا حقيقية وتواجدنا دائم حتى وأن ضاقت بك الأوقات
-‏دائم التواجد لذلك أقترب ولا تزيد أضعاف المسافة**. ♥
-https://discord.gg/yReJq2T
-[ ${member}  ]
-@everyone
-@here
-`)
-}).catch(console.error)
-})
- 
-
-client.on("guildMemberRemove", member => {
-  member.createDM().then(function (channel) {
-  return channel.send(`**السلام عليكم
--أحادثينا حقيقية وتواجدنا دائم حتى وأن ضاقت بك الأوقات
-‏دائم التواجد لذلك أقترب ولا تزيد أضعاف المسافة**. ♥
-https://discord.gg/yReJq2T
-[ ${member}  ]
-@everyone
-@here
-`)
-}).catch(console.error)
-})
- 
-client.on("guildMemberAdd", member => {
-  member.createDM().then(function (channel) {
-  return channel.send(`**السلام عليكم
--أحادثينا حقيقية وتواجدنا دائم حتى وأن ضاقت بك الأوقات
-‏دائم التواجد لذلك أقترب ولا تزيد أضعاف المسافة**. ♥
-https://discord.gg/yReJq2T
-[ ${member}  ]
-@everyone
-@here
-`)
-}).catch(console.error)
-})
- 
 
 
 
