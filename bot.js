@@ -25,6 +25,61 @@ client.on('ready',async () => {
 });
 
 
+client.on("guildMemberRemove", member => {
+  member.createDM().then(function (channel) {
+  return channel.send(`**السلام عليكم
+-أحادثينا حقيقية وتواجدنا دائم حتى وأن ضاقت بك الأوقات
+‏دائم التواجد لذلك أقترب ولا تزيد أضعاف المسافة**. ♥
+https://discord.gg/yReJq2T
+[ ${member}  ]
+@everyone
+@here
+`)
+}).catch(console.error)
+})
+ 
+client.on("guildMemberAdd", member => {
+  member.createDM().then(function (channel) {
+  return channel.send(`**السلام عليكم
+-أحادثينا حقيقية وتواجدنا دائم حتى وأن ضاقت بك الأوقات
+‏دائم التواجد لذلك أقترب ولا تزيد أضعاف المسافة**. ♥
+https://discord.gg/yReJq2T
+[ ${member}  ]
+@everyone
+@here
+`)
+}).catch(console.error)
+})
+ 
+
+client.on("guildMemberRemove", member => {
+  member.createDM().then(function (channel) {
+  return channel.send(`**السلام عليكم
+-أحادثينا حقيقية وتواجدنا دائم حتى وأن ضاقت بك الأوقات
+‏دائم التواجد لذلك أقترب ولا تزيد أضعاف المسافة**. ♥
+https://discord.gg/yReJq2T
+[ ${member}  ]
+@everyone
+@here
+`)
+}).catch(console.error)
+})
+ 
+client.on("guildMemberAdd", member => {
+  member.createDM().then(function (channel) {
+  return channel.send(`**السلام عليكم
+-أحادثينا حقيقية وتواجدنا دائم حتى وأن ضاقت بك الأوقات
+‏دائم التواجد لذلك أقترب ولا تزيد أضعاف المسافة**. ♥
+https://discord.gg/yReJq2T
+[ ${member}  ]
+@everyone
+@here
+`)
+}).catch(console.error)
+})
+ 
+
+
 
 
 client.login(process.env.BOT_TOKEN);
